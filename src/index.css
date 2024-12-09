@@ -562,4 +562,7 @@ Cocktail
     .info-icon {
         width: 25px;
     }
+    .about-section {
+        height: auto;
+    }
 }
