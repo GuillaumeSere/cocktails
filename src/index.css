@@ -158,6 +158,8 @@ Navbar
 .nav-links {
   display: flex;
   align-items: center;
+  background-color: var(--primaryColor);
+  border-radius: 5px;
 }
 .nav-links a {
   text-transform: capitalize;
@@ -173,8 +175,19 @@ Navbar
 .nav-links a:hover {
   color: var(--primaryColor);
 }
+.nav-links li:hover{
+    background-color: #d4e6a5;
+    width: 100%;
+    text-align: center;
+}
 .logo {
   width: 12rem;
+}
+.home-icon{
+    width: 50px;
+}
+.info-icon{
+    width: 50px;
 }
 /* 
 ====== 
@@ -437,11 +450,18 @@ Cocktail
     .nav-links li a{
         color: white;
         font-size: 16px;
+        margin-right: 0;
     }
 
     .nav-links li:hover{
         background-color: #d4e6a5;
         width: 100%;
         text-align: center;
+    }
+    .home-icon{
+        width: 25px;
+    }
+    .info-icon{
+        width: 25px;
     }
 }
