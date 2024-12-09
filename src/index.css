@@ -224,6 +224,7 @@ About
     width: var(--smallWidth);
     max-width: var(--maxWidth);
     margin: 0 auto;
+    height: 100vh;
 }
 
 .about-section p {
