@@ -270,6 +270,9 @@ Cocktails List
     margin-bottom: 3.5rem;
     margin-top: 1rem;
 }
+.cocktail-section{
+    height: 100vh;
+}
 
 .cocktails-center {
     width: var(--smallWidth);
@@ -430,6 +433,7 @@ Cocktail
     .drink-info {
         padding-top: 0;
     }
+ 
 }
 
 .loader,
@@ -535,6 +539,11 @@ Cocktail
     margin-right: 0.5rem;
     margin-left: 0.5rem;
 }
+@media (max-width: 1000px){
+    .section{
+        height: auto;
+    }
+}
 
 @media (max-width: 500px) {
     .nav-links {
@@ -561,6 +570,9 @@ Cocktail
 
     .info-icon {
         width: 25px;
+    }
+    .section {
+        height: auto;
     }
     .about-section {
         height: auto;
