@@ -7,6 +7,7 @@ import SingleCocktail from './pages/SingleCocktail';
 import Error from './pages/Error';
 // import components
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 function App() {
   return (
     <Router>
@@ -17,6 +18,7 @@ function App() {
         <Route path='cocktail/:id' element={<SingleCocktail />} />
         <Route path='*' element={<Error />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
