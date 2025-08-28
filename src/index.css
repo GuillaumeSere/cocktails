@@ -217,6 +217,54 @@ Navbar
 
 /* 
 ====== 
+Tooltips
+======
+*/
+.nav-item {
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--mainBlack);
+    color: var(--mainWhite);
+    padding: 0.5rem 0.75rem;
+    border-radius: var(--mainBorderRadius);
+    font-size: 0.8rem;
+    font-weight: bold;
+    white-space: nowrap;
+    box-shadow: var(--lightShadow);
+    z-index: 1000;
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+.tooltip::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid var(--mainBlack);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* 
+====== 
 About
 ======
 */
@@ -239,7 +287,6 @@ About
     width: var(--smallWidth);
     max-width: var(--maxWidth);
     margin: 0 auto;
-    height: 100vh;
 }
 
 .about-section p {
@@ -251,6 +298,10 @@ About
     background-color: rgba(255, 255, 255, 0.318);
     padding: 1rem;
     border-radius: 5px;
+}
+.about-section span{
+    font-weight: bold;
+    color: var(--primaryColor);
 }
 
 /* 
@@ -446,8 +497,6 @@ Cocktail
         gap: 3rem;
         align-items: center;
     }
-
- 
 }
 
 .loader,
