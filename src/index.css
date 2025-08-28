@@ -21,7 +21,7 @@ Variables
     --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
     --mainBorderRadius: 0.25rem;
     --smallWidth: 85vw;
-    --maxWidth: 40rem;
+    --maxWidth: 60rem;
     --fullWidth: 1170px;
 }
 
@@ -220,6 +220,21 @@ Navbar
 About
 ======
 */
+.description-section{
+    width: var(--smallWidth);
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+}
+.description-section p{
+    line-height: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    background-color: rgba(255, 255, 255, 0.318);
+    padding: 1rem;
+    border-radius: 5px;
+}
 .about-section {
     width: var(--smallWidth);
     max-width: var(--maxWidth);
@@ -231,8 +246,9 @@ About
     line-height: 2rem;
     font-weight: bold;
     letter-spacing: 2px;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    background-color: rgba(255, 255, 255, 0.318);
     padding: 1rem;
     border-radius: 5px;
 }
@@ -416,8 +432,9 @@ Cocktail
 
 .drink-info {
     padding-top: 2rem;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    background-color: rgba(255, 255, 255, 0.318);
     padding: 1rem;
     border-radius: 5px;
 }
@@ -430,9 +447,6 @@ Cocktail
         align-items: center;
     }
 
-    .drink-info {
-        padding-top: 0;
-    }
  
 }
 
